@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 13px;
+  align-items: baseline;
+  margin-right: 50px;
+}
+
+.nav-link:hover {
+  color: #B08A0D;
+}
+
+.back {
+  background-color: #362803;
+}
+
+.navs {
+  justify-content: end;
+}
+
+.btn-outline-success {
+  background-color: #B08A0D;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  border: none;
+  width: 250px;
+  border-radius: 35px;
+  height: 35px;
+  padding: 2px;
+  align-items: baseline;
+  transition: 500ms;
+}
+
+.btn-outline-success:hover {
+  background-color: white;
+  color: #B08A0D;
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=navbar.css.map */
+
+
+
+
+.navbar-toggler span{
+  border: none;
+ 
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+@media only screen and (max-width:1000px){
+  .navbar-nav{
+    width: 100%;
+    /* margin-left: 10%; */
+    text-align: center;
+  }
+
+  .nv{
+    margin-left: 3%;
+  }
+
+  .nav-link{
+    margin-left: 12%;
+  }
+}
+

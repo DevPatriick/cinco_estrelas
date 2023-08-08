@@ -1,0 +1,123 @@
+$dourado: #B08A0D;
+$marrom: #362803;
+$fonte: 'Avenir', sans-serif;
+
+
+.cards_vantagens{
+    display: block;
+}
+
+.cards_vantagens{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 45%;
+    margin: 1%;
+    border-radius: 0px;
+    border: none;
+}
+ .card-text{
+    font-size: 18px;
+    margin-top: 30px;
+    color: white;
+ }
+
+ .card-subtitle{
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+ }
+
+
+
+ #card_one{
+    background-image: url('images/example.jpg');
+ }
+
+ #card_two{
+    background-image: url('images/example.jpg');
+ }
+
+ #card_three{
+    background-image: url('images/example.jpg');
+ }
+
+ #card_four{
+    background-image: url('images/example.jpg');
+ }
+
+ #card_five{
+    background-image: url('images/example.jpg');
+ }
+
+ #card_six{
+    background-image: url('images/example.jpg');
+ }
+
+ .carousel_responsive{
+    display: none;
+ }
+
+ @media only screen and (max-width:500px){
+    .cards_vantagens{
+        display: none;
+    }
+
+    .carousel_responsive{
+        display: block;
+     }
+
+     .carousel-control-prev{
+        color: white;
+        border: 1px solid white;
+        border-radius: 100px;
+        width: 12%;
+        height: 22%;
+        margin-left: 70%;
+        margin-top: 3%;
+     }
+     .carousel-control-next{
+        color: white;
+        border: 1px solid white;
+        border-radius: 100px;
+        width: 12%;
+        height: 22%;
+        margin-right: 5%;
+        margin-top: 3%;
+     }
+ }
+
+ .button{
+    text-align: center;
+    width: 100%;
+ }
+
+ .btn-pri{
+    background-color: $dourado;
+    border: none;
+    background-color: $dourado;
+    color: white;
+    font-family: $fonte;
+    border: 1px solid $dourado;
+    width: 70%;
+    border-radius: 35px;
+    margin-top: 30px;
+    padding: 4px;
+    padding-top: 6px;
+    transition: 500ms;
+    margin-bottom: 50px;
+ }
+
+ button > a:hover{
+    color: $dourado;
+ }
+
+ .btn-pri:hover{
+    background-color: white;
+    border: 1px solid $dourado;
+    color: $dourado;
+    transition: 500ms;
+ }
+

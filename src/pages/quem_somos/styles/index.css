@@ -1,0 +1,54 @@
+
+
+
+.quem_somos h1{
+    text-align: center;
+    font-family:  'Baskervville', serif;
+    font-size: 50px;
+    margin: 4%;
+}
+
+.box_text{
+    display: flex;
+    font-family:  'Baskervville', serif;
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box_text img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.box_text p{
+    margin-left: 5%;
+}
+
+.foto img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width:500px){
+    .box_text{
+        display: flex;
+        font-family:  'Baskervville', serif;
+        font-size: 20px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .box_text img{
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+    }
+    .quem_somos h1{
+        text-align: center;
+        font-family:  'Baskervville', serif;
+        font-size: 40px;
+        margin: 4%;
+    }
+}

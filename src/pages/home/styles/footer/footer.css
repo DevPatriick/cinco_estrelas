@@ -1,0 +1,57 @@
+.cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pages {
+  display: grid;
+  font-family: "Avenir", sans-serif;
+}
+
+.pages > a:hover {
+  color: #B08A0D;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.contact > a {
+  display: flex;
+  color: white;
+  font-family: "Avenir", sans-serif;
+}
+
+.contact > a > p {
+  margin-left: 10px;
+}
+
+.contact > a:hover {
+  color: #B08A0D;
+}
+
+.cnpj {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+footer {
+  background-color: #362803;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .cont {
+    display: grid;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

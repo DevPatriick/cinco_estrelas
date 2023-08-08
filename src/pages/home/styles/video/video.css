@@ -1,0 +1,32 @@
+.video {
+  text-align: center;
+  font-family: "Baskervville", serif;
+  width: 100%;
+}
+
+.video > h2 {
+  color: #B08A0D;
+  width: 100%;
+  font-size: 250%;
+  margin-top: 40px;
+}
+
+.video > h1 {
+  width: 100%;
+  font-size: 400%;
+}
+
+@media only screen and (max-width: 500px) {
+  .video > h2 {
+    color: #B08A0D;
+    width: 100%;
+    font-size: 125%;
+    margin-top: 40px;
+  }
+  .video > h1 {
+    width: 100%;
+    font-size: 200%;
+  }
+}
+
+/*# sourceMappingURL=video.css.map */

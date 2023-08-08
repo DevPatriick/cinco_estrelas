@@ -1,0 +1,36 @@
+$dourado: #B08A0D;
+$marrom: #362803;
+$fonte: 'Baskervville', serif;
+
+
+.video{
+    text-align: center;
+    font-family: $fonte;
+    width: 100%;
+}
+
+.video > h2 {
+    color: $dourado;
+    width: 100%;
+    font-size: 250%;
+    margin-top: 40px;
+}
+
+.video > h1{
+    width: 100%;
+    font-size: 400%;
+}
+
+@media only screen and (max-width: 500px){
+    .video > h2 {
+        color: $dourado;
+        width: 100%;
+        font-size: 125%;
+        margin-top: 40px;
+    }
+    
+    .video > h1{
+        width: 100%;
+        font-size: 200%;
+    }
+}

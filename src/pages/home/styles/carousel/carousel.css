@@ -1,0 +1,121 @@
+
+
+.btnn{
+   width: 50px;
+   border-radius: 60px;
+   margin-top: 50px;
+   border: 1px solid black;
+}
+
+
+.lugares{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lugares  h1 {
+    font-size: 40px;
+    font-family: 'Baskervville', serif;
+}
+
+.lugares  p {
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+    width: 80%;
+}
+
+.from{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 50%;
+    padding-bottom: 50px;
+    margin-right: -80px;
+    margin-top: 255px;
+}
+
+.from_from{
+    width: 100%;
+    padding: 20px;
+}
+
+.one_carrosel{
+    display: flex;
+    margin-left: 20%;
+    height: 500px;
+}
+
+.image{
+    display: flex;
+}
+
+.image h5{
+    color: white;
+    margin-left: 1%;
+    margin-bottom: -2px;
+}
+
+.from_from p{
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.stars{
+    margin-left: -6px;
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width:500px){
+    .one_carrosel{
+        display: flex;
+        margin-left: 13%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width :500px){
+    .one_carrosel{
+        display: flex;
+        margin-left: 5%;
+        height: 500px;
+    }
+
+   .photo{
+       width: 70%;
+       margin-left: -100px;
+       margin-right: 20px;
+   }
+
+   .from{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 50%;
+    padding-bottom: 50px;
+    margin-right: -100px;
+    margin-top: 255px;
+}
+
+.lugares{
+    font-size: 30px;
+    display: grid;
+    text-align: center;
+
+}
+
+.lugares  p {
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+    width: 100%;
+}
+
+.btnn{
+    width: 50px;
+    border-radius: 60px;
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+ }
+
+}

@@ -1,0 +1,62 @@
+$dourado: #B08A0D;
+$marrom: #362803;
+$fonte: 'Avenir', sans-serif;
+
+
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pages{
+    display: grid;
+    font-family: $fonte;
+}
+
+.pages > a:hover{
+    color: $dourado;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.contact > a{
+    display: flex;
+    color: white;
+    font-family: $fonte;
+}
+
+.contact > a > p{
+     margin-left: 10px;
+}
+
+.contact > a:hover{
+    color: $dourado;
+}
+
+
+.cnpj{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.logo{
+    text-align: center;
+}
+
+footer{
+    background-color: $marrom;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width:500px){
+    .cont{
+        display: grid;
+       
+    }
+}

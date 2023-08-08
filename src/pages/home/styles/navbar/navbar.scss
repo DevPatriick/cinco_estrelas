@@ -1,0 +1,49 @@
+$dourado: #B08A0D;
+$marrom: #362803;
+$fonte: 'Avenir', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-link{
+    color: white;
+    font-family: $fonte;
+    font-size: 13px;
+    align-items: baseline;
+    margin-right: 50px;
+}
+
+.nav-link:hover{
+    color: $dourado;
+}
+
+.back{
+    background-color: $marrom;
+}
+
+.navs{
+   justify-content:end;
+}
+
+.btn-outline-success{
+    background-color: $dourado;
+    color: white;
+    font-family: $fonte;
+    border: none;
+    width: 250px;
+    border-radius: 35px;
+    height: 35px;
+    padding: 2px;
+     align-items: baseline;
+     transition: 500ms;
+}
+
+.btn-outline-success:hover{
+    background-color: white;
+    color: $dourado;
+    transition: 500ms;
+}

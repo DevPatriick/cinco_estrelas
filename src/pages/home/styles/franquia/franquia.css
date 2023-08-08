@@ -1,0 +1,81 @@
+.container_franqueado > h4{
+    font-family:  "Baskervville", serif;
+    color: white;
+    font-size: 50px;
+}
+.container_franqueado > h3{
+    font-family:   "Baskervville", serif;
+    color: #D8BE47;
+    font-size: 60px;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 50%;
+    border-radius: 30px;
+    transition: 500ms;
+    margin-top: 30px;
+   
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    color: #D8BE47;
+    border: 1px solid #D8BE47;
+    transition: 500ms;
+}
+
+.container_franqueado{
+    text-align: center;
+    height: 100%;
+    background-image: url('default\ 1.png');
+    padding: 120px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+}
+
+
+
+@media only screen and (max-width:500px){
+    .container_franqueado{
+        text-align: center;
+        height: 100%;
+        background-image: url('default\ 1.png');
+        padding: 3px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .container_franqueado > h4{
+        font-family:  "Baskervville", serif;
+        color: white;
+        font-size: 25px;
+    }
+    .container_franqueado > h3{
+        font-family:   "Baskervville", serif;
+        color: #D8BE47;
+        font-size: 30px;
+    }
+
+    .btn-secondary{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        width: 80%;
+        border-radius: 30px;
+        transition: 500ms;
+        margin-top: 30px;
+       
+    }
+    
+   
+}
+
+
+
+
+
+
+/*# sourceMappingURL=franquia.css.map */
