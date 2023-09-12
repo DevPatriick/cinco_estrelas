@@ -26,7 +26,16 @@
 .resposta_box_one{
     padding-left: 5px;
     padding-top: 10px;
+   
     border: 1px solid black;
+}
+
+.resposta_box_one p{
+    padding-right: 50px;
+}
+
+.resposta_box_one img{
+    margin-left: 100px;
 }
 
 #response_one{
@@ -43,6 +52,26 @@
 }
 
 #response_four{
+    display: none;
+}
+
+#response_five{
+    display: none;
+}
+
+#response_six{
+    display: none;
+}
+
+#response_seven{
+    display: none;
+}
+
+#response_eight{
+    display: none;
+}
+
+#response_nine{
     display: none;
 }
 

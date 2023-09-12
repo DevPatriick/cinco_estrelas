@@ -26,32 +26,41 @@
   margin-top: 15px;
 }
 
+
+
 #card_one {
-  background-image: url("images/example.jpg");
+  background-image: url("../../images/Mask\ group22.png");
 }
 
 #card_two {
-  background-image: url("images/example.jpg");
+  background-image: url("../../images/Mask\ group.png");
 }
 
 #card_three {
-  background-image: url("images/example.jpg");
+  background-image: url("../../images/Mask\ group11.png");
 }
 
 #card_four {
-  background-image: url("images/example.jpg");
+  background-image: url("../../images/Mask\ group12.png");
 }
 
 #card_five {
-  background-image: url("images/example.jpg");
+  background-image: url("../../images/Mask\ group24.png");
 }
 
 #card_six {
-  background-image: url("images/example.jpg");
+  background-image: url("../../images/Mask\ group32.png");
 }
 
 .carousel_responsive {
   display: none;
+}
+
+#carouselExample{
+  display: none;
+}
+.padding{
+  padding: 15%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -60,13 +69,18 @@
   }
   .carousel_responsive {
     display: block;
+    overflow-x: scroll;
   }
+
+  
+
+  
   .carousel-control-prev {
     color: white;
     border: 1px solid white;
     border-radius: 100px;
     width: 12%;
-    height: 22%;
+    height: 17%;
     margin-left: 70%;
     margin-top: 3%;
   }
@@ -75,9 +89,16 @@
     border: 1px solid white;
     border-radius: 100px;
     width: 12%;
-    height: 22%;
+    height: 17%;
     margin-right: 5%;
     margin-top: 3%;
+  }
+
+  
+
+  .card{
+    width: 98%;
+    height: 270px;
   }
 }
 .button {

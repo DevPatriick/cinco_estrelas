@@ -1,0 +1,53 @@
+
+
+.formulario{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.form-control{
+    border: 1px solid #B08A0D;
+    color: #B08A0D;
+}
+
+.form-control::placeholder {
+    color: #B08A0D;
+  }
+
+.form-label{
+    color: #B08A0D;
+}
+
+.dourado{
+    background-color: #B08A0D;
+    border: none;
+}
+
+.dourado:hover{
+    background-color: #b08a0dab;
+}
+
+.contato{
+    width: 30%;
+    text-align: center;
+    margin-top: 7%;
+    color: #B08A0D;
+}
+
+@media only screen and (max-width:500px){
+    .formulario{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .contato{
+        width: 100%;
+        text-align: center;
+        margin-top: 7%;
+        color: #B08A0D;
+    }
+}

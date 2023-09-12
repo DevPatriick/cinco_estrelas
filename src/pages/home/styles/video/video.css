@@ -16,6 +16,24 @@
   font-size: 400%;
 }
 
+.video_desk{
+  margin-bottom: 5%;
+}
+
+.video_mobile{
+  display: none;
+}
+
+video{
+  width: 90%;
+  
+}
+
+source{
+  width: 90%;
+  
+}
+
 @media only screen and (max-width: 500px) {
   .video > h2 {
     color: #B08A0D;
@@ -26,6 +44,24 @@
   .video > h1 {
     width: 100%;
     font-size: 200%;
+  }
+
+  .video_mobile{
+    display: block;
+  }
+
+  video{
+    width: 90%;
+    
+  }
+
+  source{
+    width: 90%;
+    
+  }
+
+  .video_desk{
+   display: none;
   }
 }
 

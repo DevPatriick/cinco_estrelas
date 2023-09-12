@@ -1,0 +1,286 @@
+
+#carousse_responsive{
+    display: none;
+}
+
+#carousse{
+    display: flex;
+    overflow-x: scroll;
+}
+
+#carousse::-webkit-scrollbar{
+    display: none;
+}
+
+.img_carousse{
+   display: flex;
+   flex-flow: row nowrap;
+   transform: translateX(0);
+    transition: 0.7s ease-in-out;
+}
+
+#responsivo_branco{
+  display: none;
+}
+
+.img_carousse img{
+    width: 100%;
+}
+
+#left{
+    position: absolute;
+    z-index: 1;
+}
+
+#right{
+    position: absolute;
+    margin-left: 98%;
+    z-index: 1;
+}
+
+.arrows{
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+
+/* @media only screen and(max-width: 450px) and (min-width: 320px){
+    .arrows{
+        cursor: pointer;
+    }
+
+    #carouse{
+        display: none;
+    }
+
+    #carousse_responsive{
+        display: block;
+    }
+
+    .arrows img{
+        width: 100px;
+    }
+
+    .img_carousse_responsive{
+        display: flex;
+        flex-flow: row nowrap;
+        transform: translateX(0);
+         transition: 0.7s ease-in-out;
+     }
+
+     
+    #carousse_responsive{
+        display: flex;
+        overflow-x: scroll;
+        margin-top: 40px;
+        display: block;
+    }
+
+    #carousse_responsive::-webkit-scrollbar{
+        display: none;
+    }
+} */
+
+ @media only screen and (max-width: 450px) and (min-width: 320px){
+    #carousse_responsive{
+        display: block;
+    }
+    
+    #carousse{
+        display: none;
+    }
+    
+    #carousse_responsive::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .img_carousse_responsive{
+       display: flex;
+       flex-flow: row nowrap;
+       transform: translateX(0);
+        transition: 0.7s ease-in-out;
+        width: 100%;
+
+    }
+    
+    #responsivo_branco{
+      display: block;
+    }
+
+     
+    
+    #left3{
+        position: absolute;
+        z-index: 1;
+        
+    }
+    
+    #right3{
+        position: absolute;
+        margin-left: 95%;
+        z-index: 1;
+        
+    }
+    
+    .arrows{
+        margin-top: 23%;
+        cursor: pointer;
+    }
+}
+
+/* @media only screen and (max-width: 399px) and (min-width: 381px){
+    #carousse{
+        display: none;
+    }
+
+    #carousse_responsive{
+        display: flex;
+        overflow-x: scroll;
+        margin-top: 40px;
+        display: block;
+    }
+
+
+    #carousse_responsive::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .img_carousse_responsive{
+       display: flex;
+       flex-flow: row nowrap;
+       transform: translateX(0);
+        transition: 0.7s ease-in-out;
+       margin-left: 12%;
+    }
+    
+    .img_carousse_responsive img{
+        position: relative;
+        padding-right: 12%;
+    }
+
+    
+    #left3{
+        position: absolute;
+        z-index: 1;
+       margin-top: 35%;
+    }
+    
+    #right3{
+        position: absolute;
+        z-index: 1;
+        margin-left: 93%;
+        margin-top: 35%;
+        width:7%;
+    }
+    
+    .arrows{
+        margin-top: 10%;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 380px) and (min-width: 330px){
+    #carousse{
+        display: none;
+    }
+
+    #carousse_responsive{
+        display: flex;
+        overflow-x: scroll;
+        margin-top: 40px;
+        display: block;
+    }
+
+
+    #carousse_responsive::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .img_carousse_responsive{
+       display: flex;
+       flex-flow: row nowrap;
+       transform: translateX(0);
+       transition: 0.7s ease-in-out;
+       margin-left: 9%;
+    }
+    
+    .img_carousse_responsive img{
+        position: relative;
+       width: 100%;
+       padding-right: 7%;
+    }
+
+    
+    #left3{
+        position: absolute;
+        z-index: 1;
+       margin-top: 40%;
+    }
+    
+    #right3{
+        position: absolute;
+        z-index: 1;
+        margin-left: 93%;
+        margin-top: 40%;
+        width:7%;
+    }
+    
+    .arrows{
+        margin-top: 6%;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 400px) and (min-width: 400px){
+    #carousse{
+        display: none;
+    }
+
+    #carousse_responsive{
+        display: flex;
+        overflow-x: scroll;
+        margin-top: 40px;
+        display: block;
+    }
+
+
+    #carousse_responsive::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .img_carousse_responsive{
+       display: flex;
+       flex-flow: row nowrap;
+       transform: translateX(0);
+       transition: 0.7s ease-in-out;
+       margin-left: 10%;
+    }
+    
+    .img_carousse_responsive img{
+        position: relative;
+       width: 100%;
+      padding-right: 20%;
+    }
+
+    
+    #left3{
+        position: absolute;
+        z-index: 1;
+       margin-top: 40%;
+    }
+    
+    #right3{
+        position: absolute;
+        z-index: 1;
+        margin-left: 93%;
+        margin-top: 40%;
+        width:7%;
+    }
+    
+    .arrows{
+        margin-top: 6%;
+        cursor: pointer;
+    }
+} */ 

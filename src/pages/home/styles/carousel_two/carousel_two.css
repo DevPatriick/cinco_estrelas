@@ -6,7 +6,19 @@
     width: 50%;
     margin-left: 25%;
     font-family: 'Baskerville', serif;
+    margin-top: 5%;
+    margin-bottom: -10%;
 }
+
+.ip{
+    margin-top: 15%;
+}
+
+.lugares{
+    margin-left: -20%;
+}
+
+
 
 .depo h3{
     font-size: 38px;
@@ -20,6 +32,10 @@
     text-align: center;
 }
 
+.carouse_two{
+    margin-bottom: 5%;
+}
+
 .setas button{
     width: 50px;
     height: 50px;
@@ -27,10 +43,242 @@
     border-radius: 40px;
 }
 
-.images_carouse{
-    display: flex;
+.scrol{
     overflow-x: scroll;
-    width: 100%;
+    margin-bottom: 2%;
 }
 
+.images_carouse{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    transform: translateX(0);
+     transition: 0.7s ease-in-out;
+     text-align: center; 
+     /* padding-left: 10%; */
+  }
+
+  /* .images_carouse img{
+    padding-left: 3%;
+  } */
+   
+  .scrol::-webkit-scrollbar{
+    display: none;
+}
+
+.carro_mobile{
+    display: none;
+}
+
+.depoo{
+    margin-bottom: 5%;
+    margin-top: -13%;
+}
+
+@media only screen and (max-width:1000px) and (min-width:501px){
+    .padding{
+        padding: 10%;
+        margin-top: 120px;
+    }
+
+    .prev{
+        z-index: 10;
+        color: black;
+        border-color: black;
+        margin-top: -10%;
+        margin-bottom: 10%;
+        margin-left: 35%;
+        height: 60px;
+       width: 60px;
+    }
+    
+    .next{
+        z-index: 10;
+        color: black;
+        border-color: black;
+        margin-top: -10%;
+        margin-bottom: 10%;
+        margin-right: 32%;
+        height: 60px;
+       width: 60px;
+    }
+
+    .depo{
+        margin-bottom: -20%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .depoo{
+        margin-bottom: 10%;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .depoo{
+        margin-bottom: -30%;
+        margin-top: -30%;
+    }
+
+    .carro_desk{
+        display: none;
+    }
+
+    .carro_mobile{
+        display: block;
+    }
+
+    .in{
+        width: 50px;
+        height: 50px;
+    }
+
+    .o{
+        margin-left: 67%;
+    }
+
+    #carouselExampleDark{
+        display: none;
+    }
+ 
+    
+
+    .carolse_responsive img{
+        width: 310px;
+    }
+
+  .last_responsive{
+    margin-right: 50px;
+  }
+
+    .scrol_responsive{
+        overflow-x: scroll;
+        margin-bottom: 2%;
+        padding-right: 10%;
+    }
+    
+.images_carouse_responsive{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    transform: translateX(0);
+     transition: 0.7s ease-in-out;
+     }
+   
+  .scrol::-webkit-scrollbar{
+    display: none;
+}
+
+.c{
+    padding: 10%;
+}
+
+.prev{
+    z-index: 10;
+    color: black;
+    border-color: black;
+    margin-top: 90%;
+    margin-bottom: 10%;
+    margin-left: 35%;
+    height: 60px;
+   width: 60px;
+}
+
+.next{
+    z-index: 10;
+    color: black;
+    border-color: black;
+    margin-top: 90%;
+    margin-bottom: 10%;
+    margin-right: 32%;
+    height: 60px;
+   width: 60px;
+}
+
+
+.carousel_responsive{
+    margin-top: 30px;
+}
+
+.lugares{
+    margin-left: 0;
+}
+
+#carouselExample{
+    display: block;
+}
+
+
+
+.carousel-inner{
+    height: 350px;
+}
+
+.cao{
+    height: 530px;
+}
+
+.bt{
+    margin-top: -80%;
+}
+
+.depo{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: -1x;
+}
+
+.depo h3{
+    font-size: 25px;
+}
+
+.photo{
+    height: 370px;
+}
+
+#pre{
+    margin-top: 10%;
+  
+}
+
+#nex{
+    margin-top: 10%;
+}
+
+#prevent{
+    margin-top: 90%;
+}
+
+#nextt{
+    margin-top: 90%;
+}
+
+
+}
+
+
+@media only screen and (max-width:360px){
+    #pre{
+        margin-top: 10%;
+      
+    }
+    
+    #nex{
+        margin-top: 10%;
+        margin-left: 65%;
+    }
+    
+    #prevent{
+        margin-top: 90%;
+        margin-left: 30%;
+    }
+    
+    #nextt{
+        margin-top: 90%;
+        margin-right: 30%;
+        
+    }
+}
 

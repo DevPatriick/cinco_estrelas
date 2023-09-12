@@ -5,32 +5,1319 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
     <title>Viagens 5 Estrelas</title>
+
+    <link rel="icon" href="estrela.png" type="image/png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="src/pages/home/styles/navbar/navbar.css">
-    <link rel="stylesheet" href="src/pages/home/styles/video/video.css">
-    <link rel="stylesheet" href="src/pages/home/styles/cards/cards.css">
-    <link rel="stylesheet" href="src/pages/home/styles/franquia/franquia.css">
-    <link rel="stylesheet" href="src/pages/home/styles/faq/faq.css">
-    <link rel="stylesheet" href="src/pages/home/styles/carousel/carousel.css">
-    <link rel="stylesheet" href="src/pages/home/styles/carousel_two/carousel_two.css">
-    <link rel="stylesheet" href="src/pages/home/styles/footer/footer.css">
+    
+
+   
+    
 
 </head>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 13px;
+  align-items: baseline;
+  margin-right: 50px;
+}
+
+.nav-link:hover {
+  color: #B08A0D;
+}
+
+.back {
+  background-color: #362803;
+}
+
+.navs {
+  justify-content: end;
+}
+
+.btn-outline-success {
+  background-color: #B08A0D;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  border: none;
+  width: 250px;
+  border-radius: 35px;
+  height: 35px;
+  padding: 2px;
+  align-items: baseline;
+  transition: 500ms;
+}
+
+.btn-outline-success:hover {
+  background-color: white;
+  color: #B08A0D;
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=navbar.css.map */
+
+
+
+
+.navbar-toggler span{
+  border: none;
+ 
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+.navbar-brand img{
+  width: 170px;
+  height: 50px;
+}
+
+.logo{
+  margin-bottom: 30px;
+}
+
+
+
+
+ @media only screen and (max-width:500px){
+  .logo img{
+    width: 100%;
+  }
+
+  .navbar-brand img{
+    width: 100%;
+    height: 49px;
+  }
+
+  .navbar-brand{
+    width: 44%;
+    z-index: 12;
+    margin-left: 25%;
+  }
+
+
+  
+ }
+
+@media only screen and (max-width:500px){
+  .navbar-nav{
+    width: 100%;
+    /* margin-left: 10%; */
+    text-align: center;
+  }
+
+  .nv{
+    margin-left: 3%;
+  }
+
+  .nav-link{
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (max-width:1000px) and (min-width:500px){
+  .navbar-nav{
+    width: 100%;
+    /* margin-left: 10%; */
+    text-align: center;
+  }
+
+  .nv{
+    margin-left: 1%;
+  }
+
+  .nav-link{
+    margin-left: 6%;
+  }
+}
+
+.video {
+  text-align: center;
+  font-family: "Baskervville", serif;
+  width: 100%;
+}
+
+.video > h2 {
+  color: #B08A0D;
+  width: 100%;
+  font-size: 250%;
+  margin-top: 40px;
+}
+
+.video > h1 {
+  width: 100%;
+  font-size: 400%;
+}
+
+.video_desk{
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.video_mobile{
+  display: none;
+}
+
+video{
+  width: 100%;
+  margin: 0;
+}
+
+source{
+  width: 100%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .video > h2 {
+    color: #B08A0D;
+    width: 100%;
+    font-size: 125%;
+    margin-top: 40px;
+  }
+  .video > h1 {
+    width: 100%;
+    font-size: 200%;
+  }
+
+  .video_mobile{
+    display: block;
+  }
+
+  video{
+    width: 90%;
+    
+  }
+
+  source{
+    width: 90%;
+    
+  }
+
+  .video_desk{
+   display: none;
+  }
+}
+
+/*# sourceMappingURL=video.css.map */
+
+.video {
+  text-align: center;
+  font-family: "Baskervville", serif;
+  width: 100%;
+}
+
+.video > h2 {
+  color: #B08A0D;
+  width: 100%;
+  font-size: 250%;
+  margin-top: -680px;
+  z-index: 10;
+ color: white;
+}
+
+.video > h1 {
+  width: 100%;
+  font-size: 400%;
+  z-index: 20;
+  margin-bottom: 400px;
+  color: white
+}
+
+.video_desk{
+  margin-bottom: 5%;
+}
+
+.video_mobile{
+  display: none;
+}
+
+video{
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+source{
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .video > h2 {
+    color: #B08A0D;
+    width: 100%;
+    font-size: 125%;
+    margin-top: -850px;
+    color: black;
+  
+  }
+  .video > h1 {
+    width: 100%;
+    font-size: 200%;
+    color: black;
+    margin-bottom: 550px;
+  }
+
+  .video_mobile{
+    display: block;
+    margin-bottom: 100px;
+  }
+
+  video{
+    width: 100%;
+   
+  }
+
+  source{
+    width: 100%;
+    
+  }
+
+  .video_desk{
+   display: none;
+  }
+}
+
+/*# sourceMappingURL=video.css.map */
+
+.cards_vantagens {
+  display: block;
+}
+
+.cards_vantagens {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 45%;
+  margin: 1%;
+  border-radius: 0px;
+  border: none;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-top: 30px;
+  color: white;
+}
+
+.card-subtitle {
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+}
+
+
+
+#card_one {
+  background-image: url("src/pages/home/images/Mask\ group22.png");
+}
+
+#card_two {
+  background-image: url("src/pages/home/images/Mask\ group.png");
+}
+
+#card_three {
+  background-image: url("src/pages/home/images/Mask\ group11.png");
+}
+
+#card_four {
+  background-image: url("src/pages/home/images/Mask\ group12.png");
+}
+
+#card_five {
+  background-image: url("src/pages/home/images/Mask\ group24.png");
+}
+
+#card_six {
+  background-image: url("src/pages/home/images/Mask\ group32.png");
+}
+
+.carousel_responsive {
+  display: none;
+}
+
+#carouselExample{
+  display: none;
+}
+.padding{
+  padding: 15%;
+}
+
+@media only screen and (max-width: 500px) {
+  .cards_vantagens {
+    display: none;
+  }
+  .carousel_responsive {
+    display: block;
+    overflow-x: scroll;
+  }
+
+  
+
+  
+  .carousel-control-prev {
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 12%;
+    height: 17%;
+    margin-left: 70%;
+    margin-top: 3%;
+  }
+  .carousel-control-next {
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 12%;
+    height: 17%;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+
+  
+
+  .card{
+    width: 98%;
+    height: 270px;
+  }
+}
+.button {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #B08A0D;
+  border: none;
+  background-color: #B08A0D;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  border: none;
+  width: 50%;
+  border-radius: 35px;
+  margin-top: 30px;
+  padding: 4px;
+  padding-top: 6px;
+  transition: 500ms;
+  margin-bottom: 50px;
+}
+
+button > a:hover {
+  color: #B08A0D;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  border: 1px solid #B08A0D;
+  color: #B08A0D;
+}
+
+/*# sourceMappingURL=cards.css.map */
+
+.container_franqueado > h4{
+    font-family:  "Baskervville", serif;
+    color: white;
+    font-size: 50px;
+}
+.container_franqueado > h3{
+    font-family:   "Baskervville", serif;
+    color: #D8BE47;
+    font-size: 60px;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 50%;
+    border-radius: 30px;
+    transition: 500ms;
+    margin-top: 30px;
+   
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    color: #D8BE47;
+    border: 1px solid #D8BE47;
+    transition: 500ms;
+}
+
+.container_franqueado{
+    text-align: center;
+    height: 100%;
+    background-image: url('src/pages/home/styles/franquia/default\ 1.png');
+    padding: 120px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+}
+
+
+
+@media only screen and (max-width:500px){
+    .container_franqueado{
+        text-align: center;
+        height: 100%;
+        background-image: url('src/pages/home/styles/franquia/default\ 1.png');
+        padding: 3px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .container_franqueado > h4{
+        font-family:  "Baskervville", serif;
+        color: white;
+        font-size: 25px;
+    }
+    .container_franqueado > h3{
+        font-family:   "Baskervville", serif;
+        color: #D8BE47;
+        font-size: 30px;
+    }
+
+    .btn-secondary{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        width: 80%;
+        border-radius: 30px;
+        transition: 500ms;
+        margin-top: 30px;
+       
+    }
+    
+   
+}
+
+
+
+.faq{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.image_faq{
+    width: 35%;
+    margin-left: 10%;
+}
+
+.perguntas_frequentes{
+    width: 35%;
+    margin-left: 5%;
+}
+
+.box_one{
+    display: flex;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.resposta_box_one{
+    padding-left: 5px;
+    padding-top: 10px;
+   
+    border: 1px solid black;
+}
+
+.resposta_box_one p{
+    padding-right: 50px;
+}
+
+.resposta_box_one img{
+    margin-left: 100px;
+}
+
+#response_one{
+    display: none;
+    
+}
+
+#response_two{
+    display: none;
+}
+
+#response_three{
+    display: none;
+}
+
+#response_four{
+    display: none;
+}
+
+#response_five{
+    display: none;
+}
+
+#response_six{
+    display: none;
+}
+
+#response_seven{
+    display: none;
+}
+
+#response_eight{
+    display: none;
+}
+
+#response_nine{
+    display: none;
+}
+
+.titulo_faq{
+    color: #B08A0D;
+    font-family: 'Avenir', sans-serif; 
+    width: 27%;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.box_one img{
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+
+
+.resposta_box_one img{
+    width: 4%;
+    height: 15px;
+    margin-top: -55px;
+    margin-left: 92%;
+}
+
+.image_faq img{
+    width: 100%;
+}
+
+@media only screen and (max-width:500px){
+    .image_faq{
+       display: none;
+    }
+
+    .perguntas_frequentes{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+
+    .box_one{
+        display: flex;
+        border: 1px solid black;
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: 20px;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+    .titulo_faq{
+        color: #B08A0D;
+        font-family: 'Avenir', sans-serif; 
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+
+    
+}
+
+/* Your existing CSS code here */
+
+/* Add the provided CSS styles */
+.depo{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Baskerville', serif;
+    margin-top: 5%;
+    margin-bottom: -10%;
+}
+
+.ip{
+    margin-top: 15%;
+}
+
+.lugares{
+    margin-left: -20%;
+}
+
+
+
+.depo h3{
+    font-size: 38px;
+}
+
+.color{
+    color: #B08A0D;
+}
+
+.setas{
+    text-align: center;
+}
+
+.carouse_two{
+    margin-bottom: 5%;
+}
+
+.setas button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.scrol{
+    overflow-x: scroll;
+    margin-bottom: 2%;
+}
+
+.images_carouse{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    transform: translateX(0);
+     transition: 0.7s ease-in-out;
+     text-align: center; 
+     /* padding-left: 10%; */
+  }
+
+  /* .images_carouse img{
+    padding-left: 3%;
+  } */
+   
+  .scrol::-webkit-scrollbar{
+    display: none;
+}
+
+.carro_mobile{
+    display: none;
+}
+
+.depoo{
+    margin-bottom: 5%;
+    margin-top: -13%;
+}
+
+@media only screen and (max-width:1000px) and (min-width:501px){
+    .padding{
+        padding: 10%;
+        margin-top: 120px;
+    }
+
+    .prev{
+        z-index: 10;
+        color: black;
+        border-color: black;
+        margin-top: -10%;
+        margin-bottom: 10%;
+        margin-left: 35%;
+        height: 60px;
+       width: 60px;
+    }
+    
+    .next{
+        z-index: 10;
+        color: black;
+        border-color: black;
+        margin-top: -10%;
+        margin-bottom: 10%;
+        margin-right: 32%;
+        height: 60px;
+       width: 60px;
+    }
+
+    .depo{
+        margin-bottom: -20%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .depoo{
+        margin-bottom: 10%;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .depoo{
+        margin-bottom: -30%;
+        margin-top: -30%;
+    }
+
+    .carro_desk{
+        display: none;
+    }
+
+    .carro_mobile{
+        display: block;
+    }
+
+    .in{
+        width: 50px;
+        height: 50px;
+    }
+
+    .o{
+        margin-left: 67%;
+    }
+
+    #carouselExampleDark{
+        display: none;
+    }
+ 
+    
+
+    .carolse_responsive img{
+        width: 310px;
+    }
+
+  .last_responsive{
+    margin-right: 50px;
+  }
+
+    .scrol_responsive{
+        overflow-x: scroll;
+        margin-bottom: 2%;
+        padding-right: 10%;
+    }
+    
+.images_carouse_responsive{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    transform: translateX(0);
+     transition: 0.7s ease-in-out;
+     }
+   
+  .scrol::-webkit-scrollbar{
+    display: none;
+}
+
+.c{
+    padding: 10%;
+}
+
+.prev{
+    z-index: 10;
+    color: black;
+    border-color: black;
+    margin-top: 90%;
+    margin-bottom: 10%;
+    margin-left: 35%;
+    height: 60px;
+   width: 60px;
+}
+
+.next{
+    z-index: 10;
+    color: black;
+    border-color: black;
+    margin-top: 90%;
+    margin-bottom: 10%;
+    margin-right: 32%;
+    height: 60px;
+   width: 60px;
+}
+
+
+.carousel_responsive{
+    margin-top: 30px;
+}
+
+.lugares{
+    margin-left: 0;
+}
+
+#carouselExample{
+    display: block;
+}
+
+
+
+.carousel-inner{
+    height: 350px;
+}
+
+.cao{
+    height: 530px;
+}
+
+.bt{
+    margin-top: -80%;
+}
+
+.depo{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: -1x;
+}
+
+.depo h3{
+    font-size: 25px;
+}
+
+.photo{
+    height: 370px;
+}
+
+#pre{
+    margin-top: 10%;
+  
+}
+
+#nex{
+    margin-top: 10%;
+}
+
+#prevent{
+    margin-top: 90%;
+}
+
+#nextt{
+    margin-top: 90%;
+}
+
+
+}
+
+
+@media only screen and (max-width:360px){
+    #pre{
+        margin-top: 10%;
+      
+    }
+    
+    #nex{
+        margin-top: 10%;
+        margin-left: 65%;
+    }
+    
+    #prevent{
+        margin-top: 90%;
+        margin-left: 30%;
+    }
+    
+    #nextt{
+        margin-top: 90%;
+        margin-right: 30%;
+        
+    }
+}
+
+
+.cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pages {
+  display: grid;
+  font-family: "Avenir", sans-serif;
+}
+
+.pages > a:hover {
+  color: #B08A0D;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.contact > a {
+  display: flex;
+  color: white;
+  font-family: "Avenir", sans-serif;
+}
+
+.contact > a > p {
+  margin-left: 10px;
+}
+
+.contact > a:hover {
+  color: #B08A0D;
+}
+
+.cnpj {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+footer {
+  background-color: #362803;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .cont {
+    display: grid;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
+
+
+
+
+
+.carrose{
+    display: flex;
+    flex-flow: row nowrap;
+    transform: translateX(0);
+     transition: 0.7s ease-in-out;
+}
+
+.btnn img{
+    margin-top: -7px;
+}
+
+.one_left{
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin-left: 77%;
+    margin-top: -8%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.one_right{
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin-right: 13%;
+    margin-top: -8%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+
+.btnn{
+   width: 50px;
+   border-radius: 60px;
+   margin-top: 50px;
+   border: 1px solid black;
+}
+
+
+.lugares{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lugares  h1 {
+    font-size: 40px;
+    font-family: 'Baskervville', serif;
+}
+
+.lugares  p {
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+    width: 80%;
+}
+
+.carousel-control-next{
+    margin-top: 1%;
+}
+
+.carousel-control-prev{
+    margin-top: 1%;
+}
+
+.from{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 410px;
+    padding-bottom: 50px;
+    margin-right: -80px;
+    margin-top: 95px;
+}
+
+.frum{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 280px;
+    padding-bottom: 50px;
+    margin-right: -80px;
+    margin-top: 21%;
+}
+
+.from_from{
+    width: 100%;
+    padding: 20px;
+}
+
+.one_carrosel{
+    display: flex;
+    margin-left: 20%;
+    height: 500px;
+}
+
+.carousel-inner{
+    height: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.image{
+    display: flex;
+}
+
+.image h5{
+    color: white;
+    margin-left: 1%;
+    margin-bottom: -2px;
+}
+
+.from_from p{
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.stars{
+    margin-left: -6px;
+}
+
+@media only screen and (max-width:1225px){
+    .one_right{
+        background-color: transparent;
+        width: 60px;
+        height: 60px;
+        margin-right: 11%;
+        margin-top: -8%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width:500px){
+    .one_carrosel{
+        display: flex;
+        margin-left: 13%;
+        height: 500px;
+    }
+
+    .photo{
+        width: 60%;
+        height: 500px;
+        margin-left: -100px;
+        margin-right: 20px;
+    }
+
+    .carousel-control-next{
+        margin-top: 12%;
+    }
+    
+    .carousel-control-prev{
+        margin-top: 12%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .one_carrosel{
+        display: flex;
+        margin-left: 5%;
+        height: 800px;
+     
+    }
+
+   .photo{
+       width: 70%;
+       margin-left: -100px;
+       margin-right: 20px;
+   }
+
+   .carousel-inner{
+    height: 640px;
+}
+   
+
+
+
+
+   .from{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 280px;
+    padding-bottom: 50px;
+    margin-right: -100px;
+    margin-top: 255px;
+    z-index: 5;
+}
+
+.res_from{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 410px;
+    padding-bottom: 50px;
+    margin-right: -100px;
+    margin-top: 200px;
+    z-index: 5;
+}
+
+.lugares{
+    font-size: 30px;
+    display: grid;
+    text-align: center;
+}
+
+.lugares  p {
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.btnn{
+    width: 50px;
+    border-radius: 60px;
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+ }
+
+ .one_left{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-left: 60%;
+    margin-top: 7%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.one_right{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-left: 7%;
+    margin-top: 7%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.from_from p{
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+}
+
+@media only screen and (max-width:400px) and (min-width:380px){
+    .one_left{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-left: 61%;
+        margin-top: 7%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+   
+ 
+}
+
+@media only screen and (max-width:450px) and (min-width:400px){
+    .one_left{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-left: 63%;
+        margin-top: 7%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+    .one_right{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-left: 7%;
+        margin-top: 7%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:500px){
+    .one_left{
+        background-color: transparent;
+        width: 70px;
+        height: 70px;
+        margin-left: 68%;
+        margin-top: -10%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+    .one_right{
+        background-color: transparent;
+        width: 70px;
+        height: 70px;
+        margin-left: 7%;
+        margin-top: -10%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+}
+
+
+
+/*# sourceMappingURL=franquia.css.map */
+
+
+</style>
+
+
 <body>
  
     <header  >
         <nav class="navbar navbar-expand-lg back">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Viagens 5 Estrelas</a>
+              <a class="navbar-brand" href="#"><img src="Design_sem_nome__7_-removebg-preview (1).png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img src="src/pages/home/styles/navbar/interface.png" alt="" width="40px" height="40px">
               </button>
               <div class="collapse navbar-collapse navs" id="navbarNav">
                 <ul class="navbar-nav">
@@ -38,7 +1325,7 @@
                     <a class="nav-link "  href="index.html">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="src/pages/resorts/resorts.html">MELHORES RESORTS</a>
+                    <a class="nav-link" href="src/pages/resorts/resorts.html">MELHORES ALL INCLUSIVE</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">FRANQUEADOS</a>
@@ -47,10 +1334,10 @@
                     <a class="nav-link " href="src/pages/quem_somos/quem_somos.html">QUEM SOMOS</a>
                   </li>
                    <li class="nav-item">
-                    <a class="nav-link " href="">CONTATO</a>
+                    <a class="nav-link " href="src/pages/contato/contato.html">CONTATO</a>
                   </li>
                   <li class="nav-item nv">
-                    <button class="btn btn-outline-success me-2" type="button">SEJA UM FRANQUEADO!</button>
+                   <a href="https://fg.franchisinggroup.com.br/viagens-5-estrelas"> <button class="btn btn-outline-success me-2" type="button">SEJA UM FRANQUEADO!</button></a>
                   </li>
                 </ul>
               </div>
@@ -62,10 +1349,24 @@
 
     <main>
       <section class="video">
-        <h2>Os melhores Resorts do Brasil e do Mundo</h2>
+
+        <div class="video_desk">
+          <video autoplay muted loop>
+            <source src="pexels_videos_1854202 (720p).mp4" type="video/mp4" width="100%">
+          </video>
+        </div>
+  
+        <div class="video_mobile">
+          <video autoplay muted loop>
+            <source  src="pexels-ben-mack-6775423 (2160p).mp4" type="video/mp4" width="100%">
+          </video>
+        </div>
+
+
+        <h2>Os melhores Resorts All Inclusive do Brasil e do Mundo</h2>
         <h1>Viaje com quem conhece</h1>
 
-        <video src=""></video>
+       
       </section>
     </main>
 
@@ -77,35 +1378,69 @@
         <h1>Lugares mais procurados</h1>
         <p>Escolha a viagem mais inspiradora e memorável da sua vida</p> 
       </div>
-      <div class="botao">
-        <button class=" btnn btn_left" type="button" >
-          1
-        </button>
-        <button class=" btnn btn_right" type="button" >
-          2
-        </button>
-      </div>
-    </div>
-
-<div class="carrosel">
-
-    <div class="one_carrosel">
-    <div class="card mb-3 from">
-      <div class="card-body from_from">
-        <div class="image">
-        <img src="./src/pages/home/styles/carousel/images/pin.png" width="22px" height="22px" alt="localization">
-        <h5 class="card-title">OCEAN PALACE</h5>
-        </div>
-        <img src="src/pages/home/styles/carousel/images/Design_sem_nome__24_-removebg-preview.png" class="stars" width="90px" height="17px" alt="stars">
-        <p class="card-text">Localizado em Natal, no Rio Grande do Norte, o Enotel Resort All  Inclusive sem dúvidas é um dos  destinos prefiridos dos nossos  clientes no Brasil</p>
-      </div>
-    </div>
-    <img src="src/pages/resorts/styles/main/images/Group 12.png" width="40%" height="500px" class="photo" alt="paisagem">
-    </div>
-
-  </div>
-    
    </section>
+
+   <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner cao">
+      <div class="carousel-item active">
+        <div class="one_carrosel" id="post_one">
+          <div class="card mb-3 from res_from">
+            <div class="card-body from_from">
+              <div class="image">
+              <img src="./src/pages/home/styles/carousel/images/pin.png" width="22px" height="22px" alt="localization">
+              <h5 class="card-title">OCEAN PALACE</h5>
+              </div>
+              <img src="src/pages/home/styles/carousel/images/Design_sem_nome__24_-removebg-preview.png" class="stars" width="90px" height="17px" alt="stars">
+              <p class="card-text">Localizado em um dos recantos mais bonitos do Nordeste brasileiro, o Ocean Palace combina todo o charme e sofisticação da praia de Ponta Negra, na cidade de Natal/RN.
+                O Resort conta com diversas atividades de lazer e opções gastronômicas, além de uma estrutura moderna e elegante. Ideal para desfrutar momentos de conforto, tranquilidade e puro prazer no litoral potiguar. </div>
+          </div>
+          <img src="src/pages/resorts/styles/main/images/ocean palace.png" width="35%" height="500px" class="photo" alt="paisagem">
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="one_carrosel" id="post_one">
+          <div class="card mb-3 from frum">
+            <div class="card-body from_from ">
+              <div class="image">
+              <img src="./src/pages/home/styles/carousel/images/pin.png" width="22px" height="22px" alt="localization">
+              <h5 class="card-title">ENOTEL</h5>
+              </div>
+              <img src="src/pages/home/styles/carousel/images/Design_sem_nome__24_-removebg-preview.png" class="stars" width="90px" height="17px" alt="stars">
+              <p class="card-text">Localizado em Porto de Galinhas, Pernambuco, o Enotel
+                é garantia de muita diversão e momentos únicos em família. Por isso ele se 
+                destaca entre os escolhidos por nossos clientes que viajam com seus filhos</p>
+            </div>
+          </div>
+          <img src="src/pages/resorts/styles/main/images/enotel.png" width="35%" height="500px" class="photo" alt="paisagem">
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="one_carrosel" id="post_one">
+          <div class="card mb-3 from frum">
+            <div class="card-body from_from ">
+              <div class="image">
+              <img src="./src/pages/home/styles/carousel/images/pin.png" width="22px" height="22px" alt="localization">
+              <h5 class="card-title">LA TORRE</h5>
+              </div>
+              <img src="src/pages/home/styles/carousel/images/Design_sem_nome__24_-removebg-preview.png" class="stars" width="90px" height="17px" alt="stars">
+              <p class="card-text">O serviço de praia All Inclusive do La Torre faz dele 
+                um dos Resorts mais procurados pelos clientes 5 Estrelas. Localizado em Porto 
+                Seguro, Bahia, é o destino certo para famílias e casais de todas as idades</p>
+            </div>
+          </div>
+          <img src="src/pages/resorts/styles/main/images/la torre.png" width="35%" height="500px" class="photo" alt="paisagem">
+          </div>
+      </div>
+     
+    </div>
+    <button class="carousel-control-prev one_left" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <img src="src/pages/home/images/arrow (1).png" alt="" width="20px" height="20px">
+    </button>
+    <button class="carousel-control-next one_right" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+     <img src="src/pages/home/images/right-arrow (1).png" alt="" width="20px" height="20px">
+    </button>
+  </div>
 
 
 
@@ -119,114 +1454,189 @@
 
     <section class="carouse_two">
        <div class="depo">
-        <h3>O que nossos clientes dizem sobre a <span class="color">experiência</span>   Viagens 5 estrelas</h3>
+        <h3>O que nossos clientes dizem sobre a <span class="color">experiência</span>   Viagens 5 Estrelas</h3>
        </div>
 
-       <div class="carolse">
-        <div class="images_carouse">
-          <img src="src/pages/home/styles/carousel_two/images/Group 44.png" alt="">
-          <img src="src/pages/home/styles/carousel_two/images/Group 45.png" alt="">
-          <img src="src/pages/home/styles/carousel_two/images/Group 79.png" alt="">
+       <div id="carouselExampleDark" class="carousel carousel-dark slide">
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active padding" data-bs-interval="10000">
+            <img src="src/pages/home/styles/carousel_two/images/Group 82depoimentos.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item padding" data-bs-interval="2000">
+            <img src="src/pages/home/styles/carousel_two/images/Group 83depoimentos.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item padding">
+            <img src="src/pages/home/styles/carousel_two/images/Group 84depoimentos.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-       </div>
+        <button class="carousel-control-prev ip" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next ip" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-       <div class="setas">
-        <button type="button" id="prevent">1</button>
-        <button type="button" id="next" >2</button>
+       <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner ">
+          <div class="carousel-item active c">
+            <img src="src/pages/home/images/Group 91.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item c">
+            <img src="src/pages/home/images/Group 90.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item c">
+            <img src="src/pages/home/styles/carousel_two/images responsive/Group 87depoimentos.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+     <div class="divs">
+        <button class="carousel-control-prev  prev" id="prevent"type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <img src="src/pages/home/images/arrow (1).png" alt="" width="20px" height="20px">
+        </button>
+        <button class="carousel-control-next  next" id="nextt" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <img src="src/pages/home/images/right-arrow (1).png" alt="" width="20px" height="20px">
+        </button>
+      </div>
        </div>
 
     </section>
 
+    <div class="depo depoo">
+      <h3><span class="color">Vantagens</span> de escolher <span class="color"> Viagens 5 Estrelas</span> nas suas próximas férias  </h3>
+     </div>
+
+    
+
     <div class="carousel_responsive">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
+            <div class="card" >
+              <div class="card-body" id="card_one">
+               <img src="src/pages/home/images/mundo.png" alt="">
+                <h6 class="card-subtitle mb-2 ">Personalize sua viagem</h6>
+                <p class="card-text">Com a Viagens 5 Estrelas é possível personalizar o roteiro da sua viagem de acordo com suas preferências</p>
+              </div>
           </div>
-          <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="card-body" id="card_two">
+                <img src="src/pages/home/images/Vector.png" alt="">
+                <h6 class="card-subtitle mb-2 ">Atendimento personalizado</h6>
+                <p class="card-text">Oferecemos um atendimento pessoal e cotações personalizadas para cada cliente</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="card-body" id="card_three">
+                <img src="src/pages/home/images/Groupexperiencia.png" alt="">
+                <h6 class="card-subtitle mb-2 ">Anos de experiência</h6>
+                <p class="card-text">A Viagens 5 Estrelas nasceu em 2019 e conta com mais de 4 anos de expertise!</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="card-body" id="card_four">
+                <img src="src/pages/home/images/especialista.png" alt="">
+                <h6 class="card-subtitle mb-2 ">Especialistas em Resorts</h6>
+                <p class="card-text">Somos especialistas nos melhores Resorts All Inclusive e Resorts de Luxo do Brasil e do Mundo</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="card-body"  id="card_five" >
+                <img src="src/pages/home/images/Groupqualidade.png" alt="">
+                <h6 class="card-subtitle mb-2 ">Qualidade garantida</h6>
+                <p class="card-text">Nós garantimos a melhor qualidade em nossas viagens do começo ao fim!</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item active">
-            <img src="src/pages/home/styles/cards/images/example.jpg" class="d-block w-100" alt="...">
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="card-body" id="card_six">
+                <img src="src/pages/home/images/Groupsuporte.png" alt="">
+                <h6 class="card-subtitle mb-2 ">Suporte 24/7</h6>
+                <p class="card-text">Contamos com a parceria de + de 20 operadores de viagens, contando com uma resposta rápida e as melhores negociações</p>
+              </div>
+            </div>
           </div>
-         
-          
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev in o" id="nex" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next in" id="pre" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
+
+    
+
    
-    <div class="cards_vantagens">
+    <div class="cards_vantagens" data-aos="fade-up">
       <div class="card" >
         <div class="card-body" id="card_one">
-         <img src="src/pages/home/styles/footer/images/instagram (1).png" alt="">
+         <img src="src/pages/home/images/mundo.png" alt="">
           <h6 class="card-subtitle mb-2 ">Personalize sua viagem</h6>
-          <p class="card-text">Com a Viagens 5 estrelas é possível personalizar o roteiro a sua viagem de acordo com suas preferências</p>
+          <p class="card-text">Com a Viagens 5 Estrelas é possível personalizar o roteiro da sua viagem de acordo com suas preferências</p>
         </div>
       </div>
       <div class="card" >
         <div class="card-body" id="card_two">
-          <img src="src/pages/home/styles/footer/images/instagram (1).png" alt="">
+          <img src="src/pages/home/images/Vector.png" alt="">
           <h6 class="card-subtitle mb-2 ">Atendimento personalizado</h6>
           <p class="card-text">Oferecemos um atendimento pessoal e cotações personalizadas para cada cliente</p>
         </div>
       </div>
     </div>
 
-    <div class="cards_vantagens">
+    <div class="cards_vantagens" data-aos="fade-up">
       <div class="card" >
         <div class="card-body" id="card_three">
-          <img src="src/pages/home/styles/footer/images/instagram (1).png" alt="">
+          <img src="src/pages/home/images/Groupexperiencia.png" alt="">
           <h6 class="card-subtitle mb-2 ">Anos de experiência</h6>
-          <p class="card-text">A viagens 5 estrelas nasceu em 2019 e conta com mais de 4 anos de expertise!</p>
+          <p class="card-text">A Viagens 5 Estrelas nasceu em 2019 e conta com mais de 4 anos de expertise!</p>
         </div>
       </div>
       <div class="card" >
         <div class="card-body" id="card_four">
-          <img src="src/pages/home/styles/footer/images/instagram (1).png" alt="">
+          <img src="src/pages/home/images/especialista.png" alt="">
           <h6 class="card-subtitle mb-2 ">Especialistas em Resorts</h6>
-          <p class="card-text">Somos especialistas nos melhores Resorts all inclusive e Resorts de Luxo do Brasil e do Mundo</p>
+          <p class="card-text">Somos especialistas nos melhores Resorts All Inclusive e Resorts de Luxo do Brasil e do Mundo</p>
         </div>
       </div>
     </div>
 
-    <div class="cards_vantagens">
+    <div class="cards_vantagens" data-aos="fade-up">
       <div class="card" >
         <div class="card-body"  id="card_five" >
-          <img src="src/pages/home/styles/footer/images/instagram (1).png" alt="">
+          <img src="src/pages/home/images/Groupqualidade.png" alt="">
           <h6 class="card-subtitle mb-2 ">Qualidade garantida</h6>
           <p class="card-text">Nós garantimos a melhor qualidade em nossas viagens do começo ao fim!</p>
         </div>
       </div>
       <div class="card" >
         <div class="card-body" id="card_six">
-          <img src="src/pages/home/styles/footer/images/instagram (1).png" alt="">
+          <img src="src/pages/home/images/Groupsuporte.png" alt="">
           <h6 class="card-subtitle mb-2 ">Suporte 24/7</h6>
           <p class="card-text">Contamos com a parceria de + de 20 operadores de viagens, contando com uma resposta rápida e as melhores negociações</p>
         </div>
       </div>
     </div>
 
-  <div class="button">
+  <div class="button bt">
     <a href="#">
       <button type="button" class="btn btn-primary btn-pri">FALE CONOSCO</button>
     </a>
@@ -237,15 +1647,15 @@
         <div class="container_franqueado">
         <h4>Você sabia que <br> agora somos franquia?</h4>
         <h3>SEJA UM FRANQUEADO</h3>
-        <a href="#">
-          <button type="button" class="btn btn-secondary btn-lg">CONHEÇA AS VATAGENS</button>
+        <a href="https://fg.franchisinggroup.com.br/viagens-5-estrelas">
+          <button type="button" class="btn btn-secondary btn-lg">CONHEÇA AS VANTAGENS</button>
         </a>
       </div>
     </div>
     </section>
 
     <div class="titulo_faq">
-      <h3> <b> FAQ </b> | Pergunta frequentes que podem te ajudar</h3>
+      <h3> <b> FAQ </b> | Perguntas frequentes que podem ajudar você</h3>
     </div>
 
     <section class="faq">
@@ -258,37 +1668,98 @@
 
        <div class="perguntas_frequentes">
         <div class="box_one" id="question_one">
-          <p>Como ser franqueado?</p>
+          <p>Como funciona a Viagens 5 Estrelas?</p>
           <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
         </div>
        <div id="response_one" class="resposta_box_one" >
-        <p>Resposta  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></p>
-       
+        <p>Somos uma rede de franquias de Agências de Viagens 100% online especializada em Resorts All Inclusive. Ou seja, todos nossos franqueados atendem de maneira online, sem agência física.
+          Você pode conferir os franqueados oficiais 5 Estrelas no menu na opção franqueados.
+          Nossas agências possuem parceria com as maiores Operadoras de Turismo do Brasil, fazendo com que você sempre tenha o melhor orçamento para sua viagem.  </p>
+          <img src="src/pages/home/styles/faq/images/arrow-up.png" alt="">
        </div>
 
        <div class="box_one" id="question_two">
-        <p>Como a agência funciona?</p>
+        <p>Como posso comprar uma viagem com a 5 Estrelas?</p>
         <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
       </div>
      <div class="resposta_box_one" id="response_two">
-      <p>Resposta  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></p>
+      <p>Nossas cotações são personalizadas para seus desejos e suas necessidades.
+         Não possuímos pacotes já prontos, tudo é feito especificamente com muito carinho para você e somente para você.
+        Ao entrar em contato com um dos nossos franqueados, ele solicitará para você algumas informações
+         necessárias para entender melhor o que você deseja para sua viagem, então lhe mandará cotações personalizadas
+          em seu Whatsapp  </p> <img src="src/pages/home/styles/faq/images/arrow-up.png" alt="">
      </div>
 
      <div class="box_one" id="question_three">
-      <p>Como posso comprar uma viagem?</p>
+      <p>Comprar com Agência de Viagens é mais caro?</p>
       <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
     </div>
    <div class="resposta_box_one" id="response_three" >
-    <p>Resposta  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></p>
+    <p>Na grande maioria das vezes não! Por sermos uma Agência multimarcas (parceria com diversas Operadoras de Turismo), 
+      sempre procuramos o melhor valor possível para sua viagem em todas nossas operadoras. 
+       </p> <img src="src/pages/home/styles/faq/images/arrow-up.png" alt="">
    </div>
 
    <div class="box_one" id="question_four">
-    <p>Como posso fazer uma reserva?</p>
+    <p>Quais as vantagens de comprar minha viagem com a 5 Estrelas?</p>
     <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
   </div>
  <div class="resposta_box_one" id="response_four">
-  <p>Resposta  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></p>
+  <p>Primeiro você terá cotações personalizadas para sua viagem. Você ainda tem a vantagem de conseguirmos procurar nas maiores 
+    Operadoras do Brasil pelos melhores preços para você.
+    Você terá um profissional experiente lhe auxiliando em cada etapa da sua viagem, desde a montagem do roteiro, instruções
+     e regras para seu voo, assim como dicas sobre seu destino.
+    Você ainda terá ajuda sobre qualquer problema que possa vir a acontecer durante sua viagem, como voo remarcado, extravio
+     de bagagem, documentação necessária, problema em seu Resort ou qualquer outro imprevisto. 
+      </p> <img src="src/pages/home/styles/faq/images/arrow-up.png" alt="">
  </div>
+
+ <div class="box_one" id="question_five">
+  <p>A 5 Estrelas trabalha somente com Resorts All Inclusive?</p>
+  <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
+</div>
+<div class="resposta_box_one" id="response_five">
+<p>Não. Nós somos uma agência completa, temos acesso a todos os serviços do trade turístico,
+   como cruzeiros, circuitos, seguro viagem, aluguel de veículos, transfers e muito mais!
+  Mas nós somos especializados em Resorts All Inclusive, isso quer dizer que conhecemos e 
+  possuímos parceria com os melhores e maiores All Inclusive do Brasil e do mundo.
+   </p>  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></div>
+
+<div class="box_one" id="question_six">
+  <p>Os pagamentos das minhas viagens é realizado para a 5 Estrelas?</p>
+  <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
+</div>
+<div class="resposta_box_one" id="response_six">
+<p>Não. O pagamento da sua viagem será realizado direto para a Operadora de Turismo. É ela quem mantém negociações com os resorts e companhias aéreas. 
+  Salvo alguma excessões em que possamos ter alguma negociação diferenciada para pagementos à vista
+   ou diretamente com os Resorts. </p>  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></div>
+
+<div class="box_one" id="question_seven">
+  <p>O pagamento é seguro?</p>
+  <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
+</div>
+<div class="resposta_box_one" id="response_seven">
+<p>Com certeza. Pode ficar tranquilo, todas Operadoras de Turismo que somos parceiros são de nossa extrema
+   confiança e possuem muitos anos de experiência, além de serem extremamente conceituadas no turismo nacional. 
+    </p> <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></div>
+
+  <div class="box_one" id="question_eight">
+    <p>Estou com um problema na minha viagem, o que faço?</p>
+    <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
+  </div>
+  <div class="resposta_box_one" id="response_eight">
+  <p>Procure o Agente de Viagens 5 Estrelas com quem você fez sua compra, ele lhe auxiliará em
+     qualquer problema que você tiver durante sua viagem. 
+     </p>  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></div>
+
+    <div class="box_one" id="question_nine">
+      <p>Como posso ser franqueado?</p>
+      <img src="src/pages/home/styles/faq/images/down-filled-triangular-arrow.png" alt="icon_box_one">
+    </div>
+    <div class="resposta_box_one" id="response_nine">
+    <p>Acesse o link ______ ou vá até o menu na aba "quero ser franqueado" e preencha o formulário, que
+       iremos entrar em contato para marcarmos uma conversa. 
+       </p>  <img src="src/pages/home/styles/faq/images/arrow-up.png" alt=""></div>
 
 
        </div>
@@ -298,21 +1769,21 @@
 
     <footer>
       <div class="logo">
-        <img src="" alt="5 Estrelas">
+        <img src="src/pages/home/images/Design_sem_nome__7_-removebg-preview (1).png" alt="5 Estrelas">
       </div>
       <div class="cont">
         <div class="contact">
-          <a href="#">
+          <a href="https://wa.me/64999514258">
             <img src="src/pages/home/styles/footer/images/cell-phone.png"  width="20px" height="20px" alt="celular">
             <p>(64) 99951-4258</p>
           </a>
 
-          <a href="#">
+          <a href="mailto:atendimento@5estrelasturismo.com.br">
             <img src="src/pages/home/styles/footer/images/email (1).png"  width="20px" height="20px" alt="email">
             <p>atendimento@5estrelasturismo.com.br</p>
           </a>
 
-          <a href="#">
+          <a href="https://instagram.com/viagens5estrelas?igshid=MzRlODBiNWFlZA==">
             <img src="src/pages/home/styles/footer/images/instagram (1).png"  width="20px" height="20px" alt="instagram">
             <p>@viagens5estrelas</p>
           </a>
@@ -320,8 +1791,8 @@
 
        <div class="pages">
         <a href="#">Home</a>
-        <a href="#">Fale conosco</a>
-        <a href="#">Seja franqueado</a>
+        <a href="src/pages/contato/contato.html">Fale conosco</a>
+        <a href="https://fg.franchisinggroup.com.br/viagens-5-estrelas">Seja franqueado</a>
        </div>
       </div>
 
@@ -333,6 +1804,181 @@
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<script src="src/pages/home/moviments/faq/faq.js"></script>
-<script src="src/pages/home/moviments/carrossel/carrosel.js"></script>
+<script>const question_ = document.querySelector("#question_one");
+  const response_ = document.querySelector("#response_one");
+  
+  function abrir(){
+      if(response_.style.display="none"){
+          response_.style.display="block";
+      } 
+  }
+  
+  function fechar(){
+      if(response_.style.display="block"){
+          response_.style.display="none";
+      } 
+  }
+  
+  question_.addEventListener("click", abrir);
+  response_.addEventListener("click", fechar);
+  
+  const question_2 = document.querySelector("#question_two");
+  const response_2 = document.querySelector("#response_two");
+  
+  function abrir_two(){
+      if(response_2.style.display="none"){
+          response_2.style.display="block";
+      } 
+  }
+  
+  function fechar_two(){
+      if(response_2.style.display="block"){
+          response_2.style.display="none";
+      } 
+  }
+  
+  question_2.addEventListener("click", abrir_two);
+  response_2.addEventListener("click", fechar_two);
+  
+  const question_3 = document.querySelector("#question_three");
+  const response_3 = document.querySelector("#response_three");
+  
+  function abrir_three(){
+      if(response_3.style.display="none"){
+          response_3.style.display="block";
+      } 
+  }
+  
+  function fechar_three(){
+      if(response_3.style.display="block"){
+          response_3.style.display="none";
+      } 
+  }
+  
+  question_3.addEventListener("click", abrir_three);
+  response_3.addEventListener("click", fechar_three);
+  
+  const question_4 = document.querySelector("#question_four");
+  const response_4 = document.querySelector("#response_four");
+  
+  function abrir_four(){
+      if(response_4.style.display="none"){
+          response_4.style.display="block";
+      } 
+  }
+  
+  function fechar_four(){
+      if(response_4.style.display="block"){
+          response_4.style.display="none";
+      } 
+  }
+  
+  question_4.addEventListener("click", abrir_four);
+  response_4.addEventListener("click", fechar_four);
+  
+  // five
+  
+  const question_5 = document.querySelector("#question_five");
+  const response_5 = document.querySelector("#response_five");
+  
+  function abrir_five(){
+      if(response_5.style.display="none"){
+          response_5.style.display="block";
+      } 
+  }
+  
+  function fechar_five(){
+      if(response_5.style.display="block"){
+          response_5.style.display="none";
+      } 
+  }
+  
+  question_5.addEventListener("click", abrir_five);
+  response_5.addEventListener("click", fechar_five);
+  
+  // six
+  
+  
+  const question_6 = document.querySelector("#question_six");
+  const response_6 = document.querySelector("#response_six");
+  
+  function abrir_six(){
+      if(response_6.style.display="none"){
+          response_6.style.display="block";
+      } 
+  }
+  
+  function fechar_six(){
+      if(response_6.style.display="block"){
+          response_6.style.display="none";
+      } 
+  }
+  
+  question_6.addEventListener("click", abrir_six);
+  response_6.addEventListener("click", fechar_six);
+  
+  
+  const question_7 = document.querySelector("#question_seven");
+  const response_7 = document.querySelector("#response_seven");
+  
+  function abrir_seven(){
+      if(response_7.style.display="none"){
+          response_7.style.display="block";
+      } 
+  }
+  
+  function fechar_seven(){
+      if(response_7.style.display="block"){
+          response_7.style.display="none";
+      } 
+  }
+  
+  question_7.addEventListener("click", abrir_seven);
+  response_7.addEventListener("click", fechar_seven);
+  
+  
+  const question_8 = document.querySelector("#question_eight");
+  const response_8 = document.querySelector("#response_eight");
+  
+  function abrir_eight(){
+      if(response_8.style.display="none"){
+          response_8.style.display="block";
+      } 
+  }
+  
+  function fechar_eight(){
+      if(response_8.style.display="block"){
+          response_8.style.display="none";
+      } 
+  }
+  
+  question_8.addEventListener("click", abrir_eight);
+  response_8.addEventListener("click", fechar_eight);
+  
+  
+  const question_9 = document.querySelector("#question_nine");
+  const response_9 = document.querySelector("#response_nine");
+  
+  function abrir_nine(){
+      if(response_9.style.display="none"){
+          response_9.style.display="block";
+      } 
+  }
+  
+  function fechar_nine(){
+      if(response_9.style.display="block"){
+          response_9.style.display="none";
+      } 
+  }
+  
+  question_9.addEventListener("click", abrir_nine);
+  response_9.addEventListener("click", fechar_nine);
+  
+  
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({
+  duration: 1000
+})</script>
 </html>

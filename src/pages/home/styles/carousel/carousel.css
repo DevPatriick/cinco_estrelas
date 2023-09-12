@@ -1,5 +1,37 @@
 
 
+.carrose{
+    display: flex;
+    flex-flow: row nowrap;
+    transform: translateX(0);
+     transition: 0.7s ease-in-out;
+}
+
+.btnn img{
+    margin-top: -7px;
+}
+
+.one_left{
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin-left: 77%;
+    margin-top: -8%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.one_right{
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin-right: 13%;
+    margin-top: -8%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+
 .btnn{
    width: 50px;
    border-radius: 60px;
@@ -25,14 +57,32 @@
     width: 80%;
 }
 
+.carousel-control-next{
+    margin-top: 1%;
+}
+
+.carousel-control-prev{
+    margin-top: 1%;
+}
+
 .from{
     background-color: #362803;
     border-radius: 7px;
     width: 380px;
-    height: 50%;
+    height: 410px;
     padding-bottom: 50px;
     margin-right: -80px;
-    margin-top: 255px;
+    margin-top: 95px;
+}
+
+.frum{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 280px;
+    padding-bottom: 50px;
+    margin-right: -80px;
+    margin-top: 21%;
 }
 
 .from_from{
@@ -44,6 +94,12 @@
     display: flex;
     margin-left: 20%;
     height: 500px;
+}
+
+.carousel-inner{
+    height: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .image{
@@ -65,6 +121,18 @@
     margin-left: -6px;
 }
 
+@media only screen and (max-width:1225px){
+    .one_right{
+        background-color: transparent;
+        width: 60px;
+        height: 60px;
+        margin-right: 11%;
+        margin-top: -8%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+}
+
 
 @media only screen and (max-width: 1000px) and (min-width:500px){
     .one_carrosel{
@@ -72,13 +140,29 @@
         margin-left: 13%;
         height: 500px;
     }
+
+    .photo{
+        width: 60%;
+        height: 500px;
+        margin-left: -100px;
+        margin-right: 20px;
+    }
+
+    .carousel-control-next{
+        margin-top: 12%;
+    }
+    
+    .carousel-control-prev{
+        margin-top: 12%;
+    }
 }
 
-@media only screen and (max-width :500px){
+@media only screen and (max-width:500px){
     .one_carrosel{
         display: flex;
         margin-left: 5%;
-        height: 500px;
+        height: 800px;
+     
     }
 
    .photo{
@@ -87,14 +171,34 @@
        margin-right: 20px;
    }
 
+   .carousel-inner{
+    height: 640px;
+}
+   
+
+
+
+
    .from{
     background-color: #362803;
     border-radius: 7px;
     width: 380px;
-    height: 50%;
+    height: 280px;
     padding-bottom: 50px;
     margin-right: -100px;
     margin-top: 255px;
+    z-index: 5;
+}
+
+.res_from{
+    background-color: #362803;
+    border-radius: 7px;
+    width: 380px;
+    height: 410px;
+    padding-bottom: 50px;
+    margin-right: -100px;
+    margin-top: 200px;
+    z-index: 5;
 }
 
 .lugares{
@@ -118,4 +222,88 @@
     margin-bottom: 30px;
  }
 
+ .one_left{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-left: 60%;
+    margin-top: 7%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.one_right{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-left: 7%;
+    margin-top: 7%;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.from_from p{
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+}
+
+@media only screen and (max-width:400px) and (min-width:380px){
+    .one_left{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-left: 61%;
+        margin-top: 7%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+   
+ 
+}
+
+@media only screen and (max-width:450px) and (min-width:400px){
+    .one_left{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-left: 63%;
+        margin-top: 7%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+    .one_right{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-left: 7%;
+        margin-top: 7%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:500px){
+    .one_left{
+        background-color: transparent;
+        width: 70px;
+        height: 70px;
+        margin-left: 68%;
+        margin-top: -10%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+    .one_right{
+        background-color: transparent;
+        width: 70px;
+        height: 70px;
+        margin-left: 7%;
+        margin-top: -10%;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
 }

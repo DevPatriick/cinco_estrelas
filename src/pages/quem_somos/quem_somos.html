@@ -6,26 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem somos</title>
 
+    <link rel="icon" href="../../../estrela.png" type="image/png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Sen&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../home/styles/navbar/navbar.css">
-    <link rel="stylesheet" href="../home/styles/footer/footer.css">
-    <link rel="stylesheet" href="styles/index.css">
+    
 
 
 
 </head>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 13px;
+  align-items: baseline;
+  margin-right: 50px;
+}
+
+.nav-link:hover {
+  color: #B08A0D;
+}
+
+.back {
+  background-color: #362803;
+}
+
+.navs {
+  justify-content: end;
+}
+
+.btn-outline-success {
+  background-color: #B08A0D;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  border: none;
+  width: 250px;
+  border-radius: 35px;
+  height: 35px;
+  padding: 2px;
+  align-items: baseline;
+  transition: 500ms;
+}
+
+.btn-outline-success:hover {
+  background-color: white;
+  color: #B08A0D;
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=navbar.css.map */
+
+
+
+
+.navbar-toggler span{
+  border: none;
+ 
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+.navbar-brand img{
+  width: 170px;
+  height: 50px;
+}
+
+.logo{
+  margin-bottom: 30px;
+}
+
+
+
+
+ @media only screen and (max-width:500px){
+  .logo img{
+    width: 100%;
+  }
+
+  .navbar-brand img{
+    width: 100%;
+    height: 49px;
+  }
+
+  .navbar-brand{
+    width: 44%;
+    z-index: 12;
+    margin-left: 25%;
+  }
+
+
+  
+ }
+
+@media only screen and (max-width:500px){
+  .navbar-nav{
+    width: 100%;
+    /* margin-left: 10%; */
+    text-align: center;
+  }
+
+  .nv{
+    margin-left: 3%;
+  }
+
+  .nav-link{
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (max-width:1000px) and (min-width:500px){
+  .navbar-nav{
+    width: 100%;
+    /* margin-left: 10%; */
+    text-align: center;
+  }
+
+  .nv{
+    margin-left: 1%;
+  }
+
+  .nav-link{
+    margin-left: 6%;
+  }
+}
+
+.cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pages {
+  display: grid;
+  font-family: "Avenir", sans-serif;
+}
+
+.pages > a:hover {
+  color: #B08A0D;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.contact > a {
+  display: flex;
+  color: white;
+  font-family: "Avenir", sans-serif;
+}
+
+.contact > a > p {
+  margin-left: 10px;
+}
+
+.contact > a:hover {
+  color: #B08A0D;
+}
+
+.cnpj {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+footer {
+  background-color: #362803;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .cont {
+    display: grid;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
+
+
+
+.quem_somos h1{
+    text-align: center;
+    font-family:  'Baskervville', serif;
+    font-size: 50px;
+    margin: 4%;
+}
+
+.box_text{
+    display: flex;
+    font-family:  'Baskervville', serif;
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box_text img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.box_text p{
+    margin-left: 5%;
+}
+
+.foto img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width:500px){
+    .box_text{
+        display: flex;
+        font-family:  'Baskervville', serif;
+        font-size: 22px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .box_text img{
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+    }
+    .quem_somos h1{
+        text-align: center;
+        font-family:  'Baskervville', serif;
+        font-size: 40px;
+        margin: 4%;
+        margin-bottom: 10%;
+    }
+}
+</style>
+
 <body>
     <header  >
         <nav class="navbar navbar-expand-lg back">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Viagens 5 Estrelas</a>
+              <a class="navbar-brand" href="../../../index.html"><img src="../../../Design_sem_nome__7_-removebg-preview (1).png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img src="../../pages/home/styles/navbar/interface.png" alt="" width="40px" height="40px">
               </button>
               <div class="collapse navbar-collapse navs" id="navbarNav">
                 <ul class="navbar-nav">
@@ -33,7 +272,7 @@
                     <a class="nav-link " aria-current="page" href="../../../index.html">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../resorts/resorts.html">MELHORES RESORTS</a>
+                    <a class="nav-link" href="../resorts/resorts.html">MELHORES ALL INCLUSIVE</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="">FRANQUEADOS</a>
@@ -42,10 +281,11 @@
                     <a class="nav-link " href="../resorts/resorts.html">QUEM SOMOS</a>
                   </li>
                    <li class="nav-item">
-                    <a class="nav-link " href="">CONTATO</a>
+                    <a class="nav-link " href="../contato/contato.html">CONTATO</a>
                   </li>
                   <li class="nav-item">
-                    <button class="btn btn-outline-success me-2" type="button">SEJA UM FRANQUEADO!</button>
+                    <a href="https://fg.franchisinggroup.com.br/viagens-5-estrelas"> <button class="btn btn-outline-success me-2" type="button">SEJA UM FRANQUEADO!</button></a>
+                 
                   </li>
                 </ul>
               </div>
@@ -57,21 +297,30 @@
         <h1>Quem somos?</h1>
 
         <div class="box_text">
+          <p>Jovanovich, tem como ideal oferecer atendimento personalizado e de qualidade para quem procura realizar sua viagem dos sonhos, tudo isso de forma 100% online.</p>
+        </div>
+
+        <div class="box_text">
             <img src="styles/images/star.png" alt="stars">
-            <p>A Viagens 5 Estrelas foi fundada em 2019, nasceu da expertise dos seus dois sócios: turismo e marketing digital;</p>
+            <p> Unindo o propósito com as competências complementares de seus dois fundadores, nasceu a Viagem 5 Estrelas, uma agência de viagens especializada em Resorts All Inclusive que opera de forma enxuta, mantendo uma alta rentabilidade. Essa combinação única de visão e habilidades resultou em uma empresa excepcional no setor de viagens.</p>
         </div>
         <div class="box_text">
             <img src="styles/images/star.png" alt="stars">
-            <p>No primeiro ano registraram mais de 1 milhão em vendas;</p>
+            <p>Bianca Jovanovich é formada em Relações Internacionais pela PUC-GO e morou mais de 3 anos na Europa, onde consolidou sua paixão por viagens. Voltando ao Brasil, encontrou no turismo sua vocação e através de uma parceria com uma Agência de Viagens desenvolveu a habilidade que mais a distingue no trabalho: o excelente atendimento e a solução de problemas para seus clientes. 
+            </p>
         </div>
         <div class="box_text">
             <img src="styles/images/star.png" alt="stars">
-            <p>No ano seguinte, tiveram um crescimento de 100%, ultrapassando R$ 2 milhões em vendas;</p>
+            <p>Lucas Pilau é formado em Publicidade e Propaganda pela ESPM-RS e também possui larga experiência no Turismo, tendo administrado Hotéis e Pousadas no litoral da Bahia por mais de 15 anos. Mas sua grande contribuição à 5 Estrelas foi sua experiência em Marketing Digital</p>
         </div>
         <div class="box_text">
             <img src="styles/images/star.png" alt="stars">
-            <p>Descoberta a fórmula perfeita, iniciou-se o processo de expansão da marca.</p>
+            <p>Esse casamento de competências e estratégias deu incrivelmente certo, fazendo com que a Viagens 5 Estrelas tivesse um crescimento estrondoso desde seu início,mesmo tendo enfrentado uma pandemia em seus primeiros meses de vida. </p>
         </div>
+        <div class="box_text">
+          <img src="styles/images/star.png" alt="stars">
+          <p>Após encontrar a fórmula lucrativa trabalhando de forma remota, perceberam a oportunidade de expandir por meio de franquias. E foi nesse sistema que a Viagens 5 Estrelas vislumbrou o caminho ideal para seu crescimento, pois através de uma rede de franqueados capacitados é possível atender e vender mais viagens à sua vasta rede de clientes que chegam todos os dias.</p>
+      </div>
     </div>
 
     <div class="foto">
@@ -80,30 +329,30 @@
 
     <footer>
         <div class="logo">
-          <img src="" alt="5 Estrelas">
+          <img src="../home/images/Design_sem_nome__7_-removebg-preview (1).png" alt="5 Estrelas">
         </div>
         <div class="cont">
           <div class="contact">
-            <a href="#">
-              <img src="src/pages/home/styles/footer/images/cell-phone.png"  width="20px" height="20px" alt="celular">
+            <a href="https://wa.me/64999514258">
+              <img src="../home/styles/footer/images/cell-phone.png"  width="20px" height="20px" alt="celular">
               <p>(64) 99951-4258</p>
             </a>
   
-            <a href="#">
-              <img src="src/pages/home/styles/footer/images/email (1).png"  width="20px" height="20px" alt="email">
+            <a href="mailto:atendimento@5estrelasturismo.com.br">
+              <img src="../home/styles/footer/images/email (1).png"  width="20px" height="20px" alt="email">
               <p>atendimento@5estrelasturismo.com.br</p>
             </a>
   
-            <a href="#">
-              <img src="src/pages/home/styles/footer/images/instagram (1).png"  width="20px" height="20px" alt="instagram">
+            <a href="https://instagram.com/viagens5estrelas?igshid=MzRlODBiNWFlZA==">
+              <img src="../home/styles/footer/images/instagram (1).png"  width="20px" height="20px" alt="instagram">
               <p>@viagens5estrelas</p>
             </a>
           </div>
   
          <div class="pages">
           <a href="../../../index.html">Home</a>
-          <a href="#">Fale conosco</a>
-          <a href="#">Seja franqueado</a>
+          <a href="../contato/contato.html">Fale conosco</a>
+          <a href="https://fg.franchisinggroup.com.br/viagens-5-estrelas">Seja franqueado</a>
          </div>
         </div>
   
